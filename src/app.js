@@ -12,12 +12,10 @@ window.onload = function() {
     for (let adj of adj) {
       for (let noun of noun) {
         for (let domain of domain) {
-          domainName.push(`${pronoun}${adj}${noun}©${domain}`);
+          domainName.push(`${pronoun}${adj}${noun}${domain}`);
         }
       }
     }
   }
-  document.body.innerHTML = `<ul>${domainName
-    .map(domainName => `<li> ${domainName}</li>`)
-    .join("")}</ul>`;
+  console.log(domainName);
 };
